@@ -237,3 +237,22 @@ background-color: #0A0A0A;
     flex-grow: 1;
 
 }
+
+@media (max-width: 1200px){
+    .content-img{
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 560px){
+    .title-1{
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .btn{
+        font-size: 18px;
+        line-height: 22px;
+        padding: 16px 90px;
+    }
+}
