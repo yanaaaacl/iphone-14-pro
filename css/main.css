@@ -244,15 +244,41 @@ background-color: #0A0A0A;
     }
 
 }
+@media (max-width: 1100px){
+    .color-list{
+        flex-wrap: wrap;
+    }
+    .color-item{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 940px){
+    .news-phone{
+        display: none;
+    }
+    .news-text p, .news-text b{
+        max-width: 100%;
+    }
+}
 
 @media (max-width: 560px){
     .title-1{
         font-size: 34px;
         line-height: 42px;
     }
+    .news-title, color-title{
+        font-size: 28px;
+        line-height: 32px;
+    }
     .btn{
         font-size: 18px;
         line-height: 22px;
         padding: 16px 90px;
     }
+    .color-item, .color-item img{
+        width: 100%;
+        
+    }
+
 }
