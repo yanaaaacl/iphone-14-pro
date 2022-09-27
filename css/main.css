@@ -238,9 +238,25 @@ background-color: #0A0A0A;
 
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1230px){
     .content-img{
         max-width: 100%;
+    }
+    .contacts-inner{
+        display: block;
+    }
+    .contacts-form{
+        width: auto;
+    }
+    .contacts-title{
+        text-align: center;
+    }
+    .contacts-img{
+        width: 100%;
+
+    }
+    .contacts{
+        background-color: #574b63;
     }
 
 }
@@ -261,13 +277,37 @@ background-color: #0A0A0A;
         max-width: 100%;
     }
 }
+@media (max-width: 768px){
+    .headline, .news{
+        padding: 50px 0;
+    }
+    .color{
+        padding-bottom: 50px;
+    }
+    .contacts-form{
+        padding: 50px 70px;
+    }
+}
+@media (max-width: 640px){
+    .contacts-form{
+        padding: 140px 30px;
+    }
+    .footer-inner{
+        padding: 20px 0;
+        flex-direction: column;
+    }
+    .footer-inner .logo{
+        margin: 15px 0;
+    }
+
+}
 
 @media (max-width: 560px){
     .title-1{
         font-size: 34px;
         line-height: 42px;
     }
-    .news-title, color-title{
+    .news-title, .color-title, .contacts-title {
         font-size: 28px;
         line-height: 32px;
     }
@@ -280,5 +320,11 @@ background-color: #0A0A0A;
         width: 100%;
         
     }
+    
 
+}
+@media (max-width: 375px){
+    .contacts-form{
+        padding: 140px 10px;
+    }
 }
