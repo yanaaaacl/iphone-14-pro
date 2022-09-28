@@ -237,6 +237,9 @@ background-color: #0A0A0A;
     flex-grow: 1;
 
 }
+.menu-btn{
+    display: none;
+}
 
 @media (max-width: 1230px){
     .content-img{
@@ -270,11 +273,92 @@ background-color: #0A0A0A;
     }
 }
 @media (max-width: 940px){
+    .menu-btn{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        order: 1;
+        position: relative;
+        z-index: 50;
+    }
+    .logo, .phone{
+        position: relative;
+        z-index: 50;
+    }
+    .btn-line{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        height: 2px;
+        opacity: .5;
+        transition: .3s ease;
+
+    }
+    .btn-line:nth-child(1){
+        top: 0;
+
+    }
+    .btn-line:nth-child(2){
+        top: 20px;
+
+    }
+    .btn-line:nth-child(3){
+        top: 20px;
+
+    }
+    .btn-line:nth-child(4){
+        top: 40px;
+
+    }
+    .menu-open .btn-line:nth-child(1){
+        transform: scaleX(0);
+
+    }
+    .menu-open .btn-line:nth-child(2){
+        transform: rotate(45deg);
+
+    }
+    .menu-open .btn-line:nth-child(3){
+        transform: rotate(-45deg);
+
+    }
+    .menu-open .btn-line:nth-child(4){
+        transform: scaleX(0);
+
+    }
+    .menu{
+       position: absolute;
+       left: 0;
+       top: 0;
+       bottom: 0;
+       right: 0;
+       background-color: #0A0A0A;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       transform: translateY(-100%);
+       transition: .3s ease;
+    }
+    .menu-open .menu{
+        transform: translateY(0%);
+    }
+    .menu-item{
+        padding: 20px 0;
+        font-size: 56px;
+    }
     .news-phone{
         display: none;
     }
     .news-text p, .news-text b{
         max-width: 100%;
+    }
+    .phone{
+        text-align: center;
     }
 }
 @media (max-width: 768px){
@@ -322,6 +406,20 @@ background-color: #0A0A0A;
     }
     
 
+}
+@media (max-width: 420px){
+    .nav{
+        flex-wrap: wrap;
+    }
+    .phone{
+        flex-basis: auto;
+        margin-top: 50px;
+        order: 3;
+        width: 100%;
+    }
+    .menu-item{
+        font-size: 32px;
+    }
 }
 @media (max-width: 375px){
     .contacts-form{
